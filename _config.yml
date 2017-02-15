@@ -15,16 +15,17 @@ permalink:        pretty
 title:            'Code with the wind'
 tagline:          'Personal blog'
 description:      'Time flies when you are having fun'
-url:              http://hyde.getpoole.com
+url:              https://nejcskofic.github.io/
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Nejc Skofic'
 
 paginate:         5
 
 excerpt_separator: <!--more-->
 
 # Custom vars
-
+social:
+  linkedin_user:  nejc-%25C5%25A1kofi%25C4%258D-525932120
+  github_user:    nejcskofic
