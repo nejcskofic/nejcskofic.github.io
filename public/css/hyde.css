@@ -88,7 +88,7 @@ html {
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
-  display: block;
+  /* display: block; */
   line-height: 1.75;
 }
 a.sidebar-nav-item:hover,
@@ -249,9 +249,32 @@ a.sidebar-nav-item:focus {
   color: #8f5536;
 }
 
+/* Custom */
+.theme-base-ff .sidebar {
+  background-color: #202030;
+}
+.theme-base-ff .content a,
+.theme-base-ff .related-posts li a:hover {
+  color: #202030;
+}
+
 /*
  * Customizations
  */
+.sidebar-nav-item {
+  margin-right: 0.5rem;
+}
+.sidebar-nav-item:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 48em) {
+  .sidebar-nav-item {
+    display: block;
+    margin-right: 0;
+  }
+}
+
 .sidebar-social {
   margin-bottom: 1rem;
 }
