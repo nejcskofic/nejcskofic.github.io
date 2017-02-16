@@ -1,0 +1,12 @@
+$primary-color: #202030;
+
+.theme-custom {
+  .sidebar {
+    background-color: $primary-color;
+  }
+
+  .content a,
+  .related-posts li a:hover {
+    color: $primary-color;
+  }
+}

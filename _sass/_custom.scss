@@ -1,0 +1,57 @@
+@import "utilities";
+
+/* Overrides */
+
+.sidebar-nav-item {
+  display: inline;
+  margin-right: 0.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: 48rem) {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+/* Social */
+
+.sidebar-social {
+  margin-bottom: 1rem;
+
+  a {
+    display: inline-block;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0 0.25rem 0.25rem 0;
+    opacity: 0.5;
+    @include border-radius(50%);
+    @include hide-text;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.email {
+      background: url('../images/social/email.png') center no-repeat #050505;
+      border: 1px solid #050505;
+    }
+
+    &.linkedin {
+      background: url('../images/social/linkedin.png') center no-repeat #005A87;
+      border: 1px solid #005A87;
+    }
+
+    &.github {
+      background: url('../images/social/github.png') center no-repeat rgb(175,182,202);
+      border: 1px solid rgb(175,182,202);
+    }
+
+    &.rss {
+      background: url('../images/social/rss.png') center no-repeat #EF7522;
+      border: 1px solid #EF7522;
+    }
+  }
+}

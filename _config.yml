@@ -25,6 +25,9 @@ paginate:         5
 
 excerpt_separator: <!--more-->
 
+sass:
+  style:          compressed
+
 # Custom vars
 social:
   linkedin_user:  nejc-%25C5%25A1kofi%25C4%258D-525932120
