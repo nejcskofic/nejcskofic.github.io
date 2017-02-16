@@ -55,3 +55,26 @@
     }
   }
 }
+
+/* Pagination */
+.pagination {
+  margin-left: 0;
+  margin-right: 0;
+
+  @media (min-width: 30em) {
+    margin: 2rem 0;
+  }
+}
+
+/* Footer */
+.content {
+  padding-bottom: 1rem;
+}
+
+#footer {
+  text-align: center;
+  font-size: 0.65rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #CCC;
+}
