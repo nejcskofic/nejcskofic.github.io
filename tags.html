@@ -1,0 +1,60 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+{% if site.posts.size == 0 %}
+<p>
+  There are no posts here. Come back later :)
+</p>
+{% else %}
+  {% comment %}
+  ===
+  Programatically extract tags from posts. Since liquid does not have any notion of dictionary
+  or user defined array we must concatenate tags into string and then split it again. Joyful...
+  ===
+  {% endcomment %}
+
+  {% assign alltags = "" %}
+  {% for post in site.posts %}
+    {% assign posttags = post.tags | join:'|' | append:'|' %}
+    {% assign alltags = alltags | append:posttags %}
+  {% endfor %}
+  {% assign alltags = alltags | split:'|' | sort %}
+
+  {% assign tags = "" | split:'' %}
+  {% assign ctag = "" %}
+  {% for tag in alltags %}
+    {% if tag != "" and tag != ctag %}
+      {% assign tags = tags | push:tag %}
+      {% assign ctag = tag %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="tags-list">
+    {% for tag in tags %}
+      <a class="post-tag" href="#{{ tag | slugify }}-ref">{{ tag }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="posts post-grouping">
+    {% for tag in tags %}
+      <h2 id="{{ tag | slugify }}-ref">{{ tag }}</h2>
+      <ul class="related-posts">
+        {% for post in site.posts %}
+          {% if post.tags contains tag %}
+          <li>
+            <h3>
+              <a href="{{ post.url }}">
+                {{ post.title }}
+                <small>{{ post.date | date_to_string }}</small>
+              </a>
+            </h3>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+{% endif %}

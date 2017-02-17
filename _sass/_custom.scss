@@ -1,4 +1,5 @@
 @import "utilities";
+@import "colors";
 
 /* Overrides */
 
@@ -14,6 +15,14 @@
     display: block;
     margin-right: 0;
   }
+}
+
+.post-date {
+  display: inline;
+}
+.post-meta {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Social */
@@ -77,4 +86,41 @@
   padding-top: 1rem;
   margin-top: 1rem;
   border-top: 1px solid #CCC;
+}
+
+/* Tags */
+.post-tag, a.post-tag {
+  margin: 0.05rem 0.15rem;
+  padding: 0 0.5rem;
+  @include border-radius(5px);
+  white-space: nowrap;
+  font-size: 0.9rem;
+
+  &::before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: 0.5rem;
+  }
+}
+a.post-tag {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.post-grouping
+{
+  h2 {
+    border-bottom: 1px solid #CCC;
+  }
+
+  .related-posts li {
+    padding-left: 1rem;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+  }
 }

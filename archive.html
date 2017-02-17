@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+permalink: /archive/
 ---
 
 {% if site.posts.size == 0 %}
@@ -8,18 +9,22 @@ title: Archive
   There are no posts here. Come back later :)
 </p>
 {% else %}
-  <div class="posts">
+  <div class="posts post-grouping">
     {% for post in site.posts %}
       {% assign currentdate = post.date | date: "%B %Y" %}
       {% if currentdate != date %}
         {% unless forloop.first %}</ul>{% endunless %}
-        <h1>{{ currentdate }}</h1>
-        <ul>
+        <h2>{{ currentdate }}</h2>
+        <ul class="related-posts">
           {% assign date = currentdate %}
       {% endif %}
       <li>
-        <span>{{ post.date | date_to_string }} &raquo;</span>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
       </li>
     {% endfor %}
     {% if site.posts.size != 0 %}

@@ -1,4 +1,4 @@
-$primary-color: #202030;
+@import "colors";
 
 .theme-custom {
   .sidebar {
@@ -8,5 +8,18 @@ $primary-color: #202030;
   .content a,
   .related-posts li a:hover {
     color: $primary-color;
+  }
+
+  .post-tag,
+  a.post-tag,
+  .content a.post-tag
+  {
+    color: $secondary-color;
+    background-color: $light-secondary-color;
+
+    &:hover {
+      color: white;
+      background-color: $secondary-color;
+    }
   }
 }
