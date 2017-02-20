@@ -14,7 +14,7 @@ permalink:        pretty
 # Setup
 title:            'Code with the wind'
 tagline:          'Personal blog'
-description:      'Time flies when you are having fun'
+description:      'Where time goes while overcoming programming challenges'
 url:              https://nejcskofic.github.io/
 baseurl:          /
 
@@ -32,3 +32,12 @@ sass:
 social:
   linkedin_user:  nejc-%25C5%25A1kofi%25C4%258D-525932120
   github_user:    nejcskofic
+
+defaults:
+  -
+    scope:
+      path:       ""
+      type:       "posts"
+    values:
+      layout:     "post"
+      comments:   true

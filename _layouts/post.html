@@ -73,3 +73,7 @@ layout: default
     {% endif %}
   </ul>
 </div>
+
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}
