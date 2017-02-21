@@ -2,6 +2,7 @@
 gems:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-seo-tag
 
 # Dependencies
 markdown:         kramdown
@@ -14,7 +15,7 @@ permalink:        pretty
 # Setup
 title:            'Code with the wind'
 tagline:          'Personal blog'
-description:      'Where time goes while overcoming programming challenges'
+description:      'Where time goes while solving programming challenges'
 url:              https://nejcskofic.github.io/
 baseurl:          /
 
