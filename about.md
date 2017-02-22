@@ -10,14 +10,15 @@ My name is Nejc Škofič (or Skofic if keyboard with Slovenian layout is not ava
 While in terms on computers and programming I was no wonder child (I wrote my first
 non trivial code for faculty course), I've always had affinity for mathematics and
 logic. And coupled with love for building useful things, I think that programming
-is the best career that I could have chosen :)
+is the best career that I could have chosen. And I like to think that I am pretty
+good at it too :)
 
 ## What this blog is about
 
 When working on one thing or another I must frequently find solutions to problems
 that are not trivial. Since I don't know everything (yet...), I then have to spent
 time researching and tinkering until I am satisfied with result. This blog is
-an attempt to document interesting (to me) solutions. And hopefully you may find some
+an attempt to document interesting solutions. And hopefully you may find some
 of the posts helpful too.
 
 As for topics, they reflect what I am currently working on. Mostly .NET platform
