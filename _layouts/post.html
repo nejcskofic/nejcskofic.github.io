@@ -15,6 +15,7 @@ layout: default
   {{ content }}
 </div>
 
+{% if site.posts.size > 1 %}
 <div class="related">
   <h2>You may also like</h2>
 
@@ -73,6 +74,7 @@ layout: default
     {% endif %}
   </ul>
 </div>
+{% endif %}
 
 {% if page.comments %}
 <div id="comments">
