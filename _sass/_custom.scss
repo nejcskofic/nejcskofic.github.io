@@ -132,3 +132,47 @@ a.post-tag {
     margin-bottom: 2rem;
   }
 }
+
+/* Share buttons */
+#post-share {
+  .share-button {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    @include border-radius(50%);
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    i {
+      width: 1rem;
+      height: 1rem;
+      color: white;
+    }
+
+    &.facebook {
+      background-color: #4A66B7;
+      &:hover {
+        background-color: darken(#4A66B7, 15%);
+      }
+    }
+
+    &.googleplus {
+      background-color: #DD4B39;
+      &:hover {
+        background-color: darken(#DD4B39, 15%);
+      }
+    }
+
+    &.linkedin {
+      background-color: #0077B5;
+      &:hover {
+        background-color: darken(#0077B5, 15%);
+      }
+    }
+  }
+}

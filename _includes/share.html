@@ -1,0 +1,18 @@
+<div id="post-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}"
+    class="share-button facebook"
+    target="_blank"
+    title="Share on Facebook"
+    ><i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
+  <a href="https://plus.google.com/share?url={{ page.url | prepend: site.url | cgi_escape }}"
+    class="share-button googleplus"
+    target="_blank"
+    title="Share on Google+"
+    ><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/shareArticle?url={{ page.url | prepend: site.url | cgi_escape }}&title={{ site.title | cgi_escape }}&source={{ site.url | cgi_escape }}&mini=true"
+    class="share-button linkedin"
+    target="_blank"
+    title="Share on LinkedIn"
+    ><i class="fa fa-linkedin"></i></a>
+</div>
