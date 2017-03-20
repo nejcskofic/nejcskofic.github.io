@@ -33,6 +33,14 @@ img {
   border-radius: 0;
 }
 
+/* Source code */
+pre.highlight {
+  overflow-x: auto;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: pre;
+}
+
 /* Social */
 
 .sidebar-social {
