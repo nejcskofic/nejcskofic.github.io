@@ -3,6 +3,12 @@
 
 /* Overrides */
 
+.content {
+  @media (min-width: 48rem) {
+    max-width: 52rem;
+  }
+}
+
 .sidebar-nav-item {
   display: inline;
   margin-right: 0.5rem;
@@ -34,11 +40,29 @@ img {
 }
 
 /* Source code */
-pre.highlight {
-  overflow-x: auto;
+pre {
   word-break: normal;
   word-wrap: normal;
   white-space: pre;
+  padding: 0.5rem;
+}
+
+pre.highlight {
+  overflow-x: auto;
+}
+
+div.highlight > table {
+  display: block;
+  overflow-x: auto;
+  border: 0 solid black;
+}
+
+.highlight tbody tr td {
+  background-color: inherit;
+
+  &.code {
+    width: 100%;
+  }
 }
 
 /* Social */
