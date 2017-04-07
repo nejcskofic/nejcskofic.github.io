@@ -57,11 +57,38 @@ div.highlight > table {
   border: 0 solid black;
 }
 
-.highlight tbody tr td {
-  background-color: inherit;
+.highlight {
+  border-radius: 0;
 
-  &.code {
-    width: 100%;
+  table {
+    border-collapse: separate;
+
+    tbody tr td {
+      background-color: inherit;
+
+      &.code {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.highlighter-rouge {
+  position: relative;
+
+  &>.highlight::before {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #c0c0c0c0;
+    color: black;
+    border-radius: 0 0 0 0.25rem;
+    padding: 0 0.25rem;
+  }
+
+  &.language-csharp>.highlight::before {
+    content: "C#";
   }
 }
 
