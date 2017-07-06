@@ -91,6 +91,18 @@ div.highlight > table {
   &.language-csharp>.highlight::before {
     content: "C#";
   }
+
+  &.language-html>.highlight::before {
+    content: "HTML";
+  }
+
+  &.language-fsharp>.highlight::before {
+    content: "F#";
+  }
+
+  &.language-sql>.highlight::before {
+    content: "SQL";
+  }
 }
 
 /* Social */
