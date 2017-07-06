@@ -3,6 +3,7 @@ layout: post
 title: "LINQ Expressions"
 date: 2017-07-06T21:04:19+02:00
 series: "LINQ Expressions"
+tags: ["Expression trees", "LINQ", "C#", "MVC Razor Engine", "Entity Framework"]
 ---
 
 It has been quite some time from my last blog post. With getting used to new job
