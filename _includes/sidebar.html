@@ -2,7 +2,7 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
-        <a href="{{ site.baseurl }}">
+        <a href="{{ site.baseurl }}/">
           {{ site.title }}
         </a>
       </h1>
@@ -10,7 +10,8 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      {% assign root_url = site.baseurl | append: '/' %}
+      <a class="sidebar-nav-item{% if page.url == root_url %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -37,7 +38,7 @@
       {% if site.social.github_user %}
         <a class="github" href="https://github.com/{{ site.social.github_user }}" title="GitHub">GitHub</a>
       {% endif %}
-      <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+      <a class="rss" href="{{ site.baseurl }}/atom.xml" title="RSS">RSS</a>
     </div>
 
   </div>

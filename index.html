@@ -20,7 +20,7 @@ title: Home
       <span class="post-date">{{ post.date | date_to_string }}</span>
       <span class="post-tags">
         {% for tag in post.tags %}
-          <a class="post-tag" href="{{ site.baseurl }}tags/#{{ tag | slugify }}-ref">{{ tag }}</a>
+          <a class="post-tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}-ref">{{ tag }}</a>
         {% endfor %}
       </span>
     </div>
@@ -34,15 +34,15 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">&larr; Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older</a>
   {% else %}
     <span class="pagination-item older">&larr; Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer &rarr;</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer &rarr;</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer &rarr;</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer &rarr;</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Newer &rarr;</span>

@@ -26,7 +26,7 @@ title:            'Code with the wind'
 tagline:          'Personal blog'
 description:      'Where time goes while solving programming challenges'
 url:              https://nejcskofic.github.io
-baseurl:          /
+baseurl:          ''
 
 author:
   name:           'Nejc Skofic'
