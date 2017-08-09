@@ -38,6 +38,9 @@
       {% if site.social.github_user %}
         <a class="github" href="https://github.com/{{ site.social.github_user }}" title="GitHub">GitHub</a>
       {% endif %}
+      {% if site.social.stackoverflow_user %}
+        <a class="stackoverflow" href="https://stackoverflow.com/users/{{ site.social.stackoverflow_user }}" title="Stack Overflow">Stack overflow</a>
+      {% endif %}
       <a class="rss" href="{{ site.baseurl }}/atom.xml" title="RSS">RSS</a>
     </div>
 

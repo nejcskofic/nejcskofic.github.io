@@ -138,6 +138,11 @@ div.highlight > table {
       border: 1px solid rgb(175,182,202);
     }
 
+    &.stackoverflow {
+      background: url('../images/social/stackoverflow.png') center no-repeat #FF9B00;
+      border: 1px solid #EF7522;
+    }
+
     &.rss {
       background: url('../images/social/rss.png') center no-repeat #EF7522;
       border: 1px solid #EF7522;
