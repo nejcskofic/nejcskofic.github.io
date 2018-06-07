@@ -13,6 +13,7 @@ expression trees directly via factory methods and you just need to pass some
 additional data which is relevant only for your application. In this post we will
 look into what is possible and how infrastructure handles extensions.
 
+<!--more-->
 
 ## Why would you extend LINQ expression
 

@@ -1,5 +1,5 @@
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
@@ -36,6 +36,8 @@ paginate:         5
 
 sass:
   style:          compressed
+
+excerpt_separator: <!--more-->
 
 # Custom vars
 social:

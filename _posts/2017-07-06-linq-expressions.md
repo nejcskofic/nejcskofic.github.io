@@ -12,6 +12,7 @@ liked for writing. However, now I have a topic that I really like since I worked
 with LINQ expressions for some time and I find them really powerful. In this post
 I will explain what LINQ expressions are and where they are used.
 
+<!--more-->
 
 Chance is you may have used LINQ expressions already, you were just not aware of it.
 If you ever used MVC Razor engine with view model binding or Entity Framework, you

@@ -45,16 +45,10 @@ pre {
   word-wrap: normal;
   white-space: pre;
   padding: 0.5rem;
-}
 
-pre.highlight {
-  overflow-x: auto;
-}
-
-div.highlight > table {
-  display: block;
-  overflow-x: auto;
-  border: 0 solid black;
+  &.highlight {
+    overflow-x: auto;
+  }
 }
 
 .highlight {
@@ -62,9 +56,13 @@ div.highlight > table {
 
   table {
     border-collapse: separate;
+    margin-bottom: 0;
+    display: block;
+    border: 0 solid black;
 
     tbody tr td {
       background-color: inherit;
+      border: 0 solid black;
 
       &.code {
         width: 100%;
@@ -82,7 +80,7 @@ div.highlight > table {
     right: 0;
     top: 0;
     background-color: #C0C0C0;
-    opacity: 0.6;
+    opacity: 0.8;
     color: black;
     border-radius: 0 0 0 0.25rem;
     padding: 0 0.25rem;

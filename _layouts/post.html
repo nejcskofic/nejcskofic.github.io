@@ -13,9 +13,9 @@ layout: default
     </span>
   </div>
 
-  {% unless page.series == blank %}
+  {% if page.series and page.series != "" %}
     {% include series.html %}
-  {% endunless %}
+  {% endif %}
 
   {{ content }}
 

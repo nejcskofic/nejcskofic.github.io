@@ -10,6 +10,7 @@ took more than 3 seconds to complete. There were some tests that I knew took lon
 but this one was not one of them. So now the question was whether this was due to
 testing framework or my code was to blame.
 
+<!--more-->
 
 For those of you who are working with Visual Studio 2015 Premium or Ultimate
 editions this is really simple: right click on problematic unit test and choose

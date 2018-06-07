@@ -14,6 +14,7 @@ that I was designing API which allowed client to sort on any field. While I coul
 create if/else or switch statement covering all possibilities, this would be
 boring, error prone and unmaintainable. And there is a better way.
 
+<!--more-->
 
 Let us start with simple LINQ query which has order by clause applied. This might
 look something like this:
